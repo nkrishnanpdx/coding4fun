@@ -75,14 +75,13 @@ Example: Valid Parentheses
 ```
 # Queues
 
-    Common Operations: Enqueue, dequeue, peek.
-    Problems:
-        Implement Queue using Stacks: Use two stacks to implement a queue.
-        Sliding Window Maximum: Find the maximum in each sliding window of size k in an array.
-    Example: Implement Queue Using Stacks
+Common Operations: Enqueue, dequeue, peek.
+Problems:
+-Implement Queue using Stacks: Use two stacks to implement a queue.
+-Sliding Window Maximum: Find the maximum in each sliding window of size k in an array.
+Example: Implement Queue Using Stacks
 
    ```
-
     typedef struct {
         int stack1[10000];
         int top1;
@@ -111,14 +110,12 @@ Example: Valid Parentheses
 ```
 #  Hashing
 
-    Common Operations: Insert, search, delete using hash functions.
-    Problems:
-        Two Sum (with Hash Map): Find two numbers in an array that add up to a target.
-        Subarray Sum Equals K: Find the number of subarrays that sum to a given number.
-    Example: Two Sum (Hash Map)
-
+Common Operations: Insert, search, delete using hash functions.
+Problems:
+- Two Sum (with Hash Map): Find two numbers in an array that add up to a target.
+- Subarray Sum Equals K: Find the number of subarrays that sum to a given number.
+Example: Two Sum (Hash Map)
 ```
-
     int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
         int hashMap[20001] = {0}; // Use an array to simulate hash map
         for (int i = 0; i < numsSize; i++) {
@@ -137,15 +134,12 @@ Example: Valid Parentheses
     }
 ```
 # Trees
-
-    Common Operations: Traversal (in-order, pre-order, post-order), insertion, deletion.
-    Problems:
-        Binary Tree Inorder Traversal: Perform an in-order traversal of a binary tree.
-        Lowest Common Ancestor: Find the lowest common ancestor of two nodes in a binary tree.
-    Example: Inorder Traversal
-
-  ```
-
+Common Operations: Traversal (in-order, pre-order, post-order), insertion, deletion.
+Problems:
+- Binary Tree Inorder Traversal: Perform an in-order traversal of a binary tree.
+- Lowest Common Ancestor: Find the lowest common ancestor of two nodes in a binary tree.
+Example: Inorder Traversal
+ ```
     void inorderTraversal(struct TreeNode* root, int* res, int* returnSize) {
         if (root != NULL) {
             inorderTraversal(root->left, res, returnSize);
@@ -156,13 +150,12 @@ Example: Valid Parentheses
 ```
 # Graphs
 
-    Common Operations: BFS, DFS, shortest path (Dijkstra’s, Bellman-Ford).
-    Problems:
-        Clone Graph: Clone a graph (using BFS or DFS).
-        Word Ladder: Transform one word into another using the shortest path.
-    Example: DFS for Graph Traversal
-
-  ```
+Common Operations: BFS, DFS, shortest path (Dijkstra’s, Bellman-Ford).
+Problems:
+- Clone Graph: Clone a graph (using BFS or DFS).
+- Word Ladder: Transform one word into another using the shortest path.
+Example: DFS for Graph Traversal
+```
 
     void dfs(int node, bool* visited, struct Graph* graph) {
         visited[node] = true;
@@ -176,12 +169,11 @@ Example: Valid Parentheses
     }
 ```
 # Dynamic Programming
-
-    Common Problems:
-        Longest Increasing Subsequence: Find the longest increasing subsequence in an array.
-        Knapsack Problem: Maximize the value that can be carried in a knapsack.
-        Fibonacci Sequence: Compute Fibonacci numbers using dynamic programming to avoid redundant calculations.
-    Example: Longest Increasing Subsequence
+Common Problems:
+- Longest Increasing Subsequence: Find the longest increasing subsequence in an array.
+- Knapsack Problem: Maximize the value that can be carried in a knapsack.
+- Fibonacci Sequence: Compute Fibonacci numbers using dynamic programming to avoid redundant calculations.
+Example: Longest Increasing Subsequence
 
  ```
 
@@ -202,10 +194,10 @@ Example: Valid Parentheses
 ```
 # Sorting and Searching Algorithms
 
-    Problems:
-        Binary Search: Efficiently search in a sorted array.
-        Merge Sort: Implement merge sort to sort an array in O(n log n) time.
-    Example: Binary Search
+Problems:
+- Binary Search: Efficiently search in a sorted array.
+- Merge Sort: Implement merge sort to sort an array in O(n log n) time.
+ Example: Binary Search
 
  ```
 
@@ -222,13 +214,12 @@ Example: Valid Parentheses
 ```
 # Greedy Algorithms
 
-    Common Problems:
-        Activity Selection: Select the maximum number of activities that don’t overlap.
-        Minimum Spanning Tree: Use Prim’s or Kruskal’s algorithm to find the minimum spanning tree of a graph.
+Common Problems:
+- Activity Selection: Select the maximum number of activities that don’t overlap.
+- Minimum Spanning Tree: Use Prim’s or Kruskal’s algorithm to find the minimum spanning tree of a graph.
 
 Key Tips:
-
-    Practice LeetCode and HackerRank: These platforms provide a large number of coding problems similar to those asked in MAANG interviews.
-    Time and Space Complexity: For every solution, ensure you understand its time and space complexity.
-    Mock Interviews: Practice mock interviews with friends or on platforms like Pramp or Interviewing.io.
-    Behavioral Questions: Don't forget to prepare for behavioral interviews. Companies like Google emphasize cultural fit and problem-solving approaches.
+-Practice LeetCode and HackerRank: These platforms provide a large number of coding problems similar to those asked in MAANG interviews.
+-Time and Space Complexity: For every solution, ensure you understand its time and space complexity.
+-Mock Interviews: Practice mock interviews with friends or on platforms like Pramp or Interviewing.io.
+-Behavioral Questions: Don't forget to prepare for behavioral interviews. Companies like Google emphasize cultural fit and problem-solving approaches.
