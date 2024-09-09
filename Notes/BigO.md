@@ -84,3 +84,34 @@ int fib(int n) {
     return fib(n - 1) + fib(n - 2);  // O(2^n)
 }
 ```
+How to Analyze an Algorithm’s Time Complexity:
+
+    Identify Loops:
+        A single loop that runs n times is O(n).
+        Nested loops (loops inside loops) result in O(n²) or higher, depending on the depth of the loops.
+
+    Consider Recursive Calls:
+        If a function calls itself n times (recursion), the complexity can vary depending on how the input is reduced. For example, binary search reduces the input by half every time, leading to O(log n).
+
+    Constant-Time Operations:
+        Operations like arithmetic, comparisons, or accessing an array element by index are typically O(1).
+
+    Drop Constants and Lower-Order Terms:
+        Big O notation ignores constant factors and focuses on the dominant term that grows the fastest as input increases. For example, O(2n) is simplified to O(n), and O(n + log n) simplifies to O(n).
+
+Visual Growth of Big O Notation:
+
+| Big O Notation	   |  Input Size = 10    | Input Size = 100     |Input Size = 1000| 
+| ---    | ---   | ---     | ---     |
+| O(1)	|1	|1	|1|
+| O(log n)|	3	|6	|9|
+| O(n)	|10	|100	|1000|
+| O(n log n)	|33	|600	|9000|
+| O(n²)	|100	|10,000	|1,000,000|
+| O(2ⁿ)	|1024	|~10²⁹	|~10³⁰⁰|
+### Key Takeaways:
+
+    - Big O helps compare algorithms by showing how they scale with input size.
+    - Focus on the dominant term in the algorithm's time complexity.
+    - Optimize algorithms by reducing time complexity from O(n²) or higher to O(n log n) or O(n).
+
