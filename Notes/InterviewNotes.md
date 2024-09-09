@@ -51,8 +51,7 @@ Problems:
 - Valid Parentheses: Check if a string of parentheses is valid.
 - Min Stack: Implement a stack that supports retrieving the minimum element in constant time.
 Example: Valid Parentheses
-
-  ```
+```
 
     bool isValid(char * s) {
         char stack[10000];
@@ -219,7 +218,7 @@ Common Problems:
 - Minimum Spanning Tree: Use Prim’s or Kruskal’s algorithm to find the minimum spanning tree of a graph.
 
 Key Tips:
--Practice LeetCode and HackerRank: These platforms provide a large number of coding problems similar to those asked in MAANG interviews.
--Time and Space Complexity: For every solution, ensure you understand its time and space complexity.
--Mock Interviews: Practice mock interviews with friends or on platforms like Pramp or Interviewing.io.
--Behavioral Questions: Don't forget to prepare for behavioral interviews. Companies like Google emphasize cultural fit and problem-solving approaches.
+-    Practice LeetCode and HackerRank: These platforms provide a large number of coding problems similar to those asked in MAANG interviews.
+-    Time and Space Complexity: For every solution, ensure you understand its time and space complexity.
+-    Mock Interviews: Practice mock interviews with friends or on platforms like Pramp or Interviewing.io.
+-    Behavioral Questions: Don't forget to prepare for behavioral interviews. Companies like Google emphasize cultural fit and problem-solving approaches.
